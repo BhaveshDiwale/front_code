@@ -1,0 +1,542 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #333;
+    width: 100%;
+}
+
+.top{
+    display: block;
+    position: relative;
+    padding:15px ;
+    color: white;
+}
+
+.top h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.topnav{
+    display: none;
+}
+
+ul li{
+    list-style: none;
+    float: left;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+ul li a{
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+ul li a:hover{
+    color: white;
+    background-color: dodgerblue;
+    /*border-radius: 20px;*/
+}
+
+
+.banner{
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.bannerimg{
+    width: 100%;
+    
+}
+
+.cover,.cover1,.cover2,.cover3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.setting{
+    
+    width: 90%;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.setting h1{
+    margin-bottom: 10px;
+}
+.setting h2{
+    margin-bottom: 10px;
+}
+
+.setting p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.how{
+    background-color: crimson;
+    width: 90%;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+    font-size: 17px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.how h1{
+    margin-bottom: 20px;
+}
+
+.login , .problem , .start {
+    margin-bottom: 40px;
+
+}
+
+.register{
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.register h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.register h3{
+    background-color: maroon;
+    padding: 10px;
+    font-size:22px;
+
+}
+
+.register h3 a{
+    text-decoration: none;
+    color: white;
+}
+.events{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.events h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+.daily{
+    font-size: 18px;
+    background-color:chocolate;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+}
+
+.daily h2 , .daily p{
+    margin-bottom: 10px;
+}
+.da{
+    width: 90%;
+
+}
+
+
+.weekly{
+    font-size: 18px;
+    background-color:rebeccapurple;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+}
+
+.weekly h2 , .weekly p{
+    margin-bottom: 10px;
+}
+
+.we{
+    width: 90%;
+}
+
+.fronster{
+    font-size: 18px;
+    background-color:darkgreen;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+
+}
+
+.fronster h2, .fronster p{
+    margin-bottom: 10px;
+}
+
+.fr{
+    width: 90%;
+}
+
+.footer{
+    height: 100px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+
+}
+
+.footer h4{
+    margin-bottom: 10px;
+    margin-left: 10px;
+} 
+.footer h5{
+    margin-left: 10px;
+}
+
+.footer ul{
+    float: right;
+
+}
+
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    float: right;
+    font-size: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .down{
+        display: none;
+    }
+    .top{
+        display: inline-block;
+        margin-left: 25px;
+        
+    }
+
+
+    .topnav{
+        display: inline;
+        float: right;
+        position: relative;
+        height: 60px;
+        padding-top: 5px;
+        margin-right: 20px;
+
+
+    }
+
+    .topnav li a{
+        float: right;
+        color: white;
+    }
+
+    .topnav li a:hover{
+        border-bottom: red;
+    }
+
+    .bannerimg{
+        height: 400px;
+    }
+
+    .setting{
+        width: 85%;
+    }
+
+    .setting p{
+        font-size: 18px;
+        
+    }
+
+    .how{
+        width: 85%;
+    }
+
+    .register{
+        width: 60%;
+    }
+
+    .events{
+        width: 70%;
+    }
+    
+    
+    .da,.we,.fr{
+        height: 250px;
+        width: 70%;
+    }
+
+    .footer h4{
+        font-size: 14px;
+    }
+    .footer h5{
+        font-size: 13px;
+        
+    }
+    .footer ul li a{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .setting{
+        display: inline-block;
+        height: inherit;
+
+    }
+
+    .setting h1{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+
+    .cover1{
+        float: left;
+        width: 48%;
+        height: 625px;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 25px;
+    }
+
+    .cover2{
+        float: left;
+        width: 48%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how{
+        display:inline-block;
+    }
+
+    .cover3{
+        display: inline-block;
+
+    }
+
+    .register{
+        width: 45%;
+    }
+    
+    .events{
+        width: 100%;
+    }
+    
+    .daily,.weekly,.fronster{
+        display: inline-block;
+        width: 30%;
+        height: 450px;
+    }
+
+    .da{
+        height: 235px;
+    }
+
+    .we{
+        height: 257px ;
+    }
+
+    .fr{
+        width: 70%;
+        height: 215px;
+    }
+
+    .daily,.weekly{
+        margin-right: 10px;
+    } 
+
+}
+
+@media screen and (min-width:1440px) {
+
+    .bannerimg{
+        height: 600px;
+    }
+    .setting p{
+        padding: 10px 20px;
+    }
+
+    .setting{
+        padding: 10px 30px;
+        height: 570px;
+        position: relative;
+        bottom: 30px;
+    }
+    
+    .register{
+        width: 35%;
+    }
+
+    .fronster{
+        position: relative;
+        bottom: 20px;
+    }
+    .daily{
+        position: relative;
+        bottom: 22px;
+    }
+    .da{
+        height: 213px;
+    }
+}
+
+@media screen and (min-width:1519px) {
+    .daily{
+        position: relative;
+        bottom:42px
+    }
+    
+}
+
+@media screen and (min-width:2560px) {
+
+    .navbar{
+        height: 100px;
+    }
+
+    .top{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    ul{
+        position: relative;
+        top: 15px;
+    }
+
+    ul li{
+        font-size: 30px;
+        padding-right: 40px;
+    }
+    .bannerimg{
+        height: 900px;
+    }
+
+    .setting{
+        height: 815px;
+        position: relative;
+        top: 90px;
+    }
+
+    .cover1,.cover2{
+        margin-top: 20px;
+    }
+
+    .setting h1{
+        font-size: 50px;
+    }
+
+    .setting h2{
+        font-size: 40px;
+    }
+
+    .setting p{
+        font-size: 30px;
+        padding: 10px 60px;
+    }
+
+    .how h1{
+        font-size: 50px;
+    }
+
+    .login h3 , .problem h3 , .start h3 ,.suggestions h3{
+        font-size: 35px;
+    }
+
+    .log{
+        height: 80px;
+    }
+
+    .register h1{
+        font-size: 80px;
+    }
+
+    .register h3{
+        font-size: 40px;
+        
+    }
+
+    .events h1{
+        font-size: 80px;
+    }
+
+    .daily{
+        position: relative;
+        top: 0px;
+    }
+    .daily h2,.weekly h2, .fronster h2{
+        font-size: 60px;
+    }
+
+    .daily p,.weekly p,.fronster p{
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .daily,.weekly,.fronster{
+        height: 600px;
+    }
+
+    .da{
+        height: 282px;
+    }
+    .we{
+        height: 320px;
+    }
+
+    .fr{
+        height: 265px;
+    }
+
+    .footer{
+        height: 200px;
+        padding: 40px;
+    }
+
+    .footer h4{
+        font-size: 25px;
+    }
+
+    .footer h5{
+        font-size: 20px;
+    }
+
+    .footer ul li a{
+        font-size: 22px;
+    }
+}
